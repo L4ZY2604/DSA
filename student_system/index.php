@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheetHome.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="assets/PUPLogo.png" alt="PUP LOGO">
+            <div class="header-text">
+                <h1>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</h1>
+                <p>INSTITUTE OF TECHNOLOGY</p>
+            </div>
+        </div>
+        <a href="LOGIN.html">LOG OUT</a>
+    </header>
+
+    <main>
+        <div class="home-title">HOME PAGE</div>
+        <div class="menu-container">
+            <div class="menu-item">
+                <a href="student_list.php">
+                    <img src="assets/listicon.png" alt="Student List">
+                </a>
+                <a href="student_list.php" class="menu-label">Student List</a>
+            </div>
+            <div class="menu-item">
+                <a href="PROFILE.html">
+                    <img src="assets/profileicon.png" alt="Profile">
+                </a>
+                <a href="PROFILE.html" class="menu-label">PROFILE</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

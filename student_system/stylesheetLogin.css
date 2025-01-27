@@ -1,0 +1,309 @@
+body{
+    background-color: #800000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.info-container{
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    
+}
+
+.logo-title{
+    display:block;
+    position: fixed;
+    top: 20px;
+    left: 10%;
+    text-align: center;
+    font-size: 1rem;
+    color: white; 
+    line-height: 245%;
+   
+}
+
+.logo-title::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: -100px;  
+    width: 140%;
+    border-bottom: 3px solid #a1bec9;
+}
+
+@media (min-width: 1890px){
+    .logo-title{
+        top: 60px;
+        left: 9%;
+    }
+    
+    .logo-title::after{
+        bottom: -50px;
+        left: -115px;
+    }
+}
+
+@media (max-width: 1880px){
+    .logo-title{
+        margin-top: 10px;
+        left: 11%;
+    }
+    
+    .logo-title::after{
+        bottom: -40px;
+        left: -115px;
+    }
+}
+
+@media (max-width: 1850px){
+    .logo-title{
+        top: 60px;
+        left: 12%;
+    }
+    
+    .logo-title::after{
+        bottom: -50px;
+        left: -115px;
+    }
+}
+
+@media (max-width: 1600px) { 
+    .logo-title{
+        top: 40px;
+        left: 13%;
+        font-size: 0.875em;
+    }
+
+    .logo-title::after{
+        width: 150%;
+        bottom: -25px;
+    }
+}
+
+@media (max-width: 680px) {
+    .title {
+        left: 5%;
+        font-size: 0.875em;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+        left: 5%;
+    }
+    .info-container input {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+.title {
+    display: flex;
+    position: fixed;
+    top: 20%;
+    margin-left: 220px;
+    font-size: 2.7rem;
+    color: white;
+}
+
+@media (min-width: 1600px){
+    .title{
+        left: 5px;
+        font-size: 2.4em;
+    }
+}
+
+@media (max-width: 1000px) { 
+    .title{
+        left: -40px;
+        font-size: 2.4em;
+    }
+}
+
+@media (max-width: 750px){
+    .title{
+        left: -150px;
+        font-size: 2.4em;
+    }
+}
+
+.logo-container {
+    position: absolute;
+    margin-top: -15px; 
+    margin-left: 0%;
+    width: 10%; 
+    height: auto; 
+    display: block;
+    pointer-events: none;
+}
+
+@media (min-width: 1890px){
+    .logo-container{
+        margin-left: -2%;
+    }
+    
+}
+
+@media (min-width: 1201px){
+    .logo-container{
+        top: 69px;
+        left: 6%;
+        width: 45%;
+    }
+
+}
+
+@media (max-width: 1200px){
+    .logo-container{
+        top: 75px;
+        left: 5%;
+        width: 50%;
+    }
+}
+
+@media (max-width: 1099px){
+    .logo-container{
+        top: 68px;
+        left: 5%;
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px){
+    .logo-container{
+        top: 68px;
+        left: 5%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 650px){
+    .logo-container{
+        display: none;
+    }
+}
+
+.background{
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    right: 0;
+    top: 0;
+    height: 100vh !important;
+    width: auto;
+    object-fit: contain;
+    margin: 0;
+    z-index: -1000;
+}
+
+@media (max-width: 1200px){
+    .background{
+        display: none;
+    }
+}
+
+.info-container {
+    display: flex;
+    margin-top: 70px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh; 
+}
+
+.username input, .password input {
+    position: relative;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    outline-color: #297883;
+    border-radius: 8px;
+    width: 170%;
+    max-width: 500px;
+    left: 60%;
+    text-align: center;
+    margin: 15px 0;
+    box-sizing: border-box;
+}
+
+.input-container button {
+    display: block;
+    max-width: 200px;
+    width: 50%;
+    margin: 20px auto;
+    margin-left: 120%; 
+    border: 0;
+    padding: 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    background: #297883;
+    color: white;
+    font-weight: 1000;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #164147;
+}
+
+@media (min-width: 1860px) {
+    .username input,
+    .password input {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .username input,
+    .password input {
+        width: 130%;
+    }
+    .input-container button {
+        max-width: 150px;
+        margin-left: 105%;
+    }
+}
+
+@media (max-width: 768px) {
+    .username input,
+    .password input {
+        width: 120%;
+        font-size: 18px;  
+        padding: 20px;
+        left: 40%;
+
+    }
+
+    .input-container button {
+        max-width: 150px;
+        margin-left: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .username input,
+    .password input {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .input-container button {
+        max-width: 120px;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+
+
+

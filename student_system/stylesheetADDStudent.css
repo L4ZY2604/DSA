@@ -1,0 +1,121 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #800000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  .header-left img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+  }
+  .header-text {
+    line-height: 1.2;
+  }
+  .header-text h1 {
+    font-size: 16px;
+    margin: 0;
+  }
+  .header-text p {
+    font-size: 12px;
+    margin: 0;
+  }
+  header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  header nav a:hover {
+    color: #297883;
+    text-decoration: underline;
+  }
+  .container {
+    display: flex;
+    margin: 0;
+    align-items: flex-start;
+  }
+  .image {
+    flex: 1;
+    margin-right: 20px;
+  }
+  .image img {
+    width: 100%;
+    border-radius: 0;
+  }
+  .form-container {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .form-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  .form-container input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .form-container button {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .form-container button:hover {
+    background-color: #00574b;
+  }
+  .dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #800000;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: none;
+  }
+  .dialog button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .dialog .back-btn {
+    background-color: #f0ad4e;
+    color: white;
+  }
+  .dialog .result-btn {
+    background-color: #5cb85c;
+    color: white;
+  }

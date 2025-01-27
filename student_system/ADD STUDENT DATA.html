@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheetADDStudent.css">
+  <title>Add Student Data</title>
+ 
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="assets/PUPLogo.png" alt="PUP Logo">
+      <div class="header-text">
+        <h1>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</h1>
+        <p>INSTITUTE OF TECHNOLOGY</p>
+      </div>
+    </div>
+    <nav>
+      <a href="HOMEPAGE.html">HOME</a>
+      <a href="student_list.html">STUDENT LIST</a>
+      <a href="PROFILE.html">PROFILE</a>
+      <a href="LOGIN.html">LOG OUT</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="image">
+      <img src="assets/6075524196072538068.jpg" alt="PUP">
+    </div>
+    <div class="form-container">
+      <h2>ADD STUDENT DATA</h2>
+      <form id="studentForm">
+        <label for="student-id">STUDENT ID:</label>
+        <input type="text" id="student-id" name="student_id" required>
+
+        <label for="name">NAME:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">AGE:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="email">EMAIL:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="address">ADDRESS:</label>
+        <input type="text" id="address" name="address" required>
+
+        <button type="submit">ADD</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="dialog" id="dialogBox">
+    <p>YOU'VE SUCCESSFULLY ADDED DATA!</p>
+    <button class="back-btn" onclick="closeDialog()">BACK</button>
+    <button class="result-btn" onclick="viewResult()">VIEW RESULT</button>
+  </div>
+
+  <script>
+    const form = document.getElementById('studentForm');
+    const dialogBox = document.getElementById('dialogBox');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); 
+      dialogBox.style.display = 'block'; 
+    });
+
+    function closeDialog() {
+      dialogBox.style.display = 'none'; 
+    }
+
+    function seeResult() {
+      window.location.href = '#'; 
+    }
+  </script>
+</body>
+</html>
