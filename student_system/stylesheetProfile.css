@@ -75,7 +75,7 @@ header nav a:hover {
 }
 .profile-fields label {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 5px;
 }
 .profile-fields input {
@@ -90,7 +90,7 @@ header nav a:hover {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 30px;
 
 }
 .field-group label {

@@ -118,4 +118,5 @@ body {
   .dialog .result-btn {
     background-color: #5cb85c;
     color: white;
+    text-decoration: none;
   }
